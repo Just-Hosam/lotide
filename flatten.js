@@ -10,7 +10,7 @@ const eqArrays = (actualArr, expectedArr) => {
   }
 
   return true;
-}
+};
 
 const assertArraysEqual = (actualArr, expectedArr) => {
 
@@ -20,7 +20,7 @@ const assertArraysEqual = (actualArr, expectedArr) => {
     console.log(`❌❌❌ Assertion Failed: ${actualArr} !== ${expectedArr}`);
   }
   
-}
+};
 
 const flatten = nestArrays => {
   let flatArr = [];
@@ -38,18 +38,4 @@ const flatten = nestArrays => {
   } 
 
   return flatArr;
-}
-
-console.log(flatten([1, 2, [3, 4], 5, [6], [], ['lol', 7]]));
-
-
-
-
-
-
-
-
-
-
-
-
+};

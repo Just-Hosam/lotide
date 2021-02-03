@@ -18,5 +18,3 @@ const eqArrays = (actualArr, expectedArr) => {
 
   return true;
 }
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
