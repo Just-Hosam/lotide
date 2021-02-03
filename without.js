@@ -1,12 +1,13 @@
 const eqArrays = (actualArr, expectedArr) => {
 
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
+  for (let i = 0; i < actualArr.length; i++) {
+    if (actualArr[i] !== expectedArr[i] || (actualArr.length !== expectedArr.length)) {
+      return false;
+    }
   }
-  
-};
+
+  return true;
+}
 
 const assertArraysEqual = (actualArr, expectedArr) => {
 
