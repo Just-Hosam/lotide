@@ -36,4 +36,15 @@ const letterPositions = inputStr => {
   return letterPos;
 }
 
-console.log(letterPositions('hello'));
+let testObj = letterPositions("lighthouse in the house")
+
+assertArraysEqual(testObj.l, [0]);
+assertArraysEqual(testObj.i, [1, 11]);
+assertArraysEqual(testObj.g, [2]);
+assertArraysEqual(testObj.h, [3, 5, 15, 18]);
+assertArraysEqual(testObj.t, [4, 14]);
+assertArraysEqual(testObj.o, [6, 19]);
+assertArraysEqual(testObj.u, [7, 20]);
+assertArraysEqual(testObj.s, [8, 21]);
+assertArraysEqual(testObj.e, [9, 16, 22]);
+assertArraysEqual(testObj.n, [12]);
