@@ -23,15 +23,14 @@ const eqObjects = function(object1, object2) {
   let sortedFirstKeys = Object.keys(object1).sort();
   let sortedSecondKeys = Object.keys(object2).sort();
 
-  if (sortedFirstKeys.length !== sortedSecondKeys.length) { return false; };
   if (!eqArrays(sortedFirstKeys, sortedSecondKeys)) { return false; };
 
   for (let i = 0; i < sortedFirstKeys.length; i++) {
 
-    if (Array.isArray(object1[sortedFirstKeys[i]]) && Array.isArray(object1[sortedSecondKeys[i]])) {
+    if (Array.isArray(object1[sortedFirstKeys[i]]) && Array.isArray(object2[sortedSecondKeys[i]])) {
       if (!eqArrays(object1[sortedFirstKeys[i]], object2[sortedSecondKeys[i]])) { return false; };
     } else if (object1[sortedFirstKeys[i]] !== object2[sortedSecondKeys[i]]) { 
-      return false; 
+      return false;
     }
 
   }
