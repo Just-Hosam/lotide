@@ -1,13 +1,4 @@
-const eqArrays = (actualArr, expectedArr) => {
-
-  for (let i = 0; i < actualArr.length; i++) {
-    if (actualArr[i] !== expectedArr[i] || (actualArr.length !== expectedArr.length)) {
-      return false;
-    }
-  }
-
-  return true;
-}
+const eqArrays = require('./eqArrays-Recursive');
 
 const assertArraysEqual = (actualArr, expectedArr) => {
 
@@ -18,3 +9,5 @@ const assertArraysEqual = (actualArr, expectedArr) => {
   }
   
 }
+
+module.exports = assertArraysEqual;
