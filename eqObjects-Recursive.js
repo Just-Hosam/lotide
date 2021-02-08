@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays-Recursive');
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -8,16 +10,16 @@ const assertEqual = function(actual, expected) {
   
 };
 
-const eqArrays = (actualArr, expectedArr) => {
+// const eqArrays = (actualArr, expectedArr) => {
 
-  for (let i = 0; i < actualArr.length; i++) {
-    if (actualArr[i] !== expectedArr[i] || (actualArr.length !== expectedArr.length)) {
-      return false;
-    }
-  }
+//   for (let i = 0; i < actualArr.length; i++) {
+//     if (actualArr[i] !== expectedArr[i] || (actualArr.length !== expectedArr.length)) {
+//       return false;
+//     }
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
 const eqObjects = function(object1, object2) {
   let sortedFirstKeys = Object.keys(object1).sort();
@@ -40,6 +42,8 @@ const eqObjects = function(object1, object2) {
 
   return true;
 };
+
+module.exports = eqObjects;
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
