@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 const letterPositions = require('../letterPositions');
 
 describe('Tests for letterPositions.js', () => {
-  it('should re', () => {
+  it('should return expected when given "lighthouse in the house"', () => {
     const expected = {
       l: [0],
       i: [1, 11],
