@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install hosam-dahrooge/lotide`
+`npm install @hosam-dahrooge/lotide`
 
 **Require it:**
 
-`const _ = require(hosam-dahrooge/lotide');`
+`const _ = require(@hosam-dahrooge/lotide');`
 
 **Call it:**
 

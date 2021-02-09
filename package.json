@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@hosam-dahrooge/lotide",
   "version": "1.0.0",
   "description": "lotide LHL exercise",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Just-Hosam/lotide.git"
   },
-  "author": "",
+  "author": "Hosam Dahrooge",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Just-Hosam/lotide/issues"
